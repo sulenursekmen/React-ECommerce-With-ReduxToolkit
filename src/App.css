@@ -1,0 +1,502 @@
+/* ---------- General Styles ---------- */
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* ----------home------------ */
+
+.home-div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.home-div .category {
+    flex: 1;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    max-height: 50vh;
+}
+
+
+
+.category-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    color: #3f51b5;
+}
+
+.categories {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+
+}
+
+/* Kategori öğelerini stilize edin */
+.category-item {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 700;
+    transition: 0.5s;
+    border: 1px solid #3f51b5;
+    box-shadow: 3px 6px #3f51b5;
+    color: #3f51b5;
+    text-align: center;
+
+}
+
+.category-item:hover {
+    box-shadow: 0px 2px #3f51b5;
+    cursor: pointer;
+}
+
+.home-div .products {
+    flex: 5;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+    /* İçeriği alt satıra geçirir */
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.product-item-price {
+    position: absolute;
+    font-weight: bold;
+    top: 0;
+    right: 0;
+    background-color: #1a237e;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.product-item-price span {
+
+    font-size: small;
+
+}
+
+.product-item-title {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* İçeriği alt satıra geçirir */
+
+}
+
+.product-item img {
+    width: 200px;
+    margin: auto;
+    object-fit: fill;
+    /* height: auto;
+    object-fit: cover; */
+}
+
+
+
+
+/*-------- paginate------------ */
+
+.paginate {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.paginate li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a237e;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    list-style: none;
+    padding: 5px;
+    border-radius: 1px;
+    font-size: large;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.paginate li:hover {
+    background-color: #1a227e57;
+}
+
+.paginate li.selected {
+    /* Ekle: Aktif sayfa durumunda olan li elementi için stil */
+    background-color: #3f51b5;
+
+}
+
+.paginate li.previous, .paginate li.next {
+    background-color: rgb(134, 134, 134);
+}
+
+/* ----------home------------ */
+
+
+.product-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+
+}
+
+.product-detail-slider-div {
+    width: 80vw;
+}
+
+.product-detail-slider {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-detail-slider-img {
+    width: 40vw;
+    height: auto;
+}
+
+.slick-arrow.slick-next::before {
+    color: #3f51b5;
+
+}
+
+.slick-arrow.slick-prev::before {
+    color: #3f51b5;
+
+
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------product-detail-info ---------*/
+.product-detail-info {
+    width: 100%;
+    padding: 20px;
+}
+
+.product-detail-number,
+.product-detail-title,
+.product-detail-description,
+.product-detail-date {
+    margin-bottom: 10px;
+}
+
+.product-detail-number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f51b5;
+    margin-top: 0;
+}
+
+.product-detail-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    /* veya istediğiniz renk */
+}
+
+.product-detail-description {
+    font-size: 16px;
+    color: #555;
+    /* veya istediğiniz renk */
+}
+
+.product-detail-date {
+    font-size: 14px;
+    color: #777;
+    /* veya istediğiniz renk */
+}
+
+/* sepete ekle */
+
+.product-detail-add-to-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
+}
+
+.quantity-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quantity-container>div {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #3f51b5;
+    height: 20px;
+    color: white;
+    padding: 10px;
+    border: 1px solid #3f51b5;
+}
+
+.quantity-input {
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border: 1px solid #3f51b5;
+
+}
+
+
+.add-to-cart {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+/* ----------add-to-cart-page------------ */
+/* .cart-div{
+    margin: 10px;
+    margin-bottom: auto;
+} */
+
+.cart-component-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.cart-component-div-title {
+    width: 300px;
+}
+
+.cart-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: x-large;
+    align-items: center;
+    gap: 10px;
+    color: #3f51b5;
+    background-color: #f5f5f5;
+    margin: 10px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.cart-total span {
+    font-size: xx-large;
+    color: #5d5c5c;
+    font-weight: bold;
+}
+
+.cart-finish {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+
+}
+
+/* ----------add-to-cart------------ */
+
+/* ----------slider------------ */
+
+/* .slider-container{
+    width:80%;
+} */
+
+.slider-item-div {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 10px !important;
+}
+
+.slider-button-div {
+    margin-top: 10px;
+}
+
+.slider-img {
+    width: 30vw !important;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f51b5;
+}
+
+/* ----------slider------------ */
+
+/* ----------sorting------------ */
+.sorting-div {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.sorting-div-select {
+    background-color: #c5cae9;
+    color: #3f51b5;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sorting-div-select option:disabled {
+    color: #3f51b5;
+}
+
+
+/* ----------sorting------------ */
+
+/* ----------home------------ */
+
+
+/* ----------navbar------------ */
+
+.navbar-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+
+}
+
+.navbar-left-div {
+    font-size: 30px;
+    color: #3f51b5;
+    font-weight: bold;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+
+
+}
+
+.navbar-right-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid rgba(129, 128, 128, 0.603);
+    box-shadow: 1px 2px rgba(129, 128, 128, 0.603);
+
+}
+
+.search-box input:focus {
+    border: 1px solid rgb(163, 162, 162);
+    outline: none;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+.search-box span {
+    opacity: 0.5;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket-div {
+    position: relative;
+    cursor: pointer;
+}
+
+.basket-div span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #3f51b5;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ----------navbar------------ */
