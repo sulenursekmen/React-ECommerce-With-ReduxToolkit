@@ -144,7 +144,7 @@
     color: white;
     list-style: none;
     padding: 5px;
-    border-radius: 1px;
+    border-radius: 10px;
     font-size: large;
     width: 30px;
     height: 30px;
@@ -155,16 +155,17 @@
 
 .paginate li:hover {
     background-color: #1a227e57;
+    color: #171f4f;
 }
 
 .paginate li.selected {
-    /* Ekle: Aktif sayfa durumunda olan li elementi için stil */
     background-color: #3f51b5;
 
 }
 
 .paginate li.previous, .paginate li.next {
-    background-color: rgb(134, 134, 134);
+    background-color: rgb(175, 175, 175);
+
 }
 
 /* ----------home------------ */
@@ -428,7 +429,9 @@
     color: #3f51b5;
     font-weight: bold;
     font-family: 'Rubik Doodle Shadow', system-ui;
+    text-decoration-color: #45a049;
 
+    
 
 }
 
